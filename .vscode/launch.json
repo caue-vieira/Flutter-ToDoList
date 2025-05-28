@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "AppTarefas-46f30499e96e8d6ca353ee13908e5d4ee10d7151",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "AppTarefas-46f30499e96e8d6ca353ee13908e5d4ee10d7151 (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "AppTarefas-46f30499e96e8d6ca353ee13908e5d4ee10d7151 (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
