@@ -53,6 +53,11 @@ class TaskProvider with ChangeNotifier {
     }
   }
 
+  void deleteTask(String id) {
+    _tasks.removeWhere((task) => task.id == id);
+    notifyListeners();
+  }
+
   void toggleTaskCompletion(String id) {
     final taskIndex = _tasks.indexWhere((task) => task.id == id);
     if (taskIndex >= 0) {

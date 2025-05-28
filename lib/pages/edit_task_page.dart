@@ -50,6 +50,11 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
     }
   }
 
+  void _deleteTask() {
+    Provider.of<TaskProvider>(context, listen: false).deleteTask(widget.task.id);
+    Navigator.pop(context);
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -162,6 +167,11 @@ class _EditTaskWidgetState extends State<EditTaskWidget> {
               ),
             ),
           ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: _deleteTask,
+          backgroundColor: const Color(0xFF202020),
+          child: const Icon(Icons.delete, color: Colors.red),
         ),
       ),
     );
